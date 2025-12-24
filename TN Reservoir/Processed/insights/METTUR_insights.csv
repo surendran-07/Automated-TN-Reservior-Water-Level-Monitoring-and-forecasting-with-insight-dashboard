@@ -1,0 +1,2 @@
+reservoir_name,latest_date,latest_level_ft,previous_day_level,percent_change,percent_full,water_trend_7d,water_available_days,water_low_warning
+METTUR,2025-12-24,109.72,109.72,0.0,83.46314325452016,Falling,74.29673666919614,False

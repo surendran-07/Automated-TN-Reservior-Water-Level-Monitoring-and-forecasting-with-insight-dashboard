@@ -1,0 +1,464 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable2" xmlns:sd3="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="UiPathEventConnector" Type="InArgument(x:String)" />
+    <x:Property Name="UiPathEvent" Type="InArgument(x:String)" />
+    <x:Property Name="UiPathEventObjectType" Type="InArgument(x:String)" />
+    <x:Property Name="UiPathEventObjectId" Type="InArgument(x:String)" />
+    <x:Property Name="UiPathAdditionalEventData" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:Main.UiPathEventConnector>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Main.UiPathEventConnector>
+  <this:Main.UiPathEvent>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Main.UiPathEvent>
+  <this:Main.UiPathEventObjectType>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Main.UiPathEventObjectType>
+  <this:Main.UiPathEventObjectId>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Main.UiPathEventObjectId>
+  <this:Main.UiPathAdditionalEventData>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Main.UiPathAdditionalEventData>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
+      <x:String>System.Timers</x:String>
+      <x:String>System.ComponentModel.Design</x:String>
+      <x:String>System.Xml.Schema</x:String>
+      <x:String>System.Xml.Xsl</x:String>
+      <x:String>System.Xml.Xsl.Runtime</x:String>
+      <x:String>System.Xml.XPath</x:String>
+      <x:String>System.Xml.Resolvers</x:String>
+      <x:String>Microsoft.CodeAnalysis</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>System.Security.Authentication</x:String>
+      <x:String>System.Net.Cache</x:String>
+      <x:String>System.Net.NetworkInformation</x:String>
+      <x:String>System.Net.Security</x:String>
+      <x:String>System.Net.Sockets</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>System.Management.Automation</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Net.Security</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
+      <AssemblyReference>System.Net.NetworkInformation</AssemblyReference>
+      <AssemblyReference>System.Net.Ping</AssemblyReference>
+      <AssemblyReference>System.Net.Sockets</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="801.2,3795.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="folderExists" />
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+      <Variable x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+      <Variable x:TypeArguments="x:Object" Name="WSSessionData" />
+      <Variable x:TypeArguments="sd3:DataTable" Name="dtMaster" />
+      <Variable x:TypeArguments="x:String" Name="masterpath" />
+      <Variable x:TypeArguments="x:String" Name="dailypath" />
+      <Variable x:TypeArguments="x:String" Name="Today" />
+      <Variable x:TypeArguments="x:String" Name="Url" />
+      <Variable x:TypeArguments="x:String" Name="UiPathEventConnector" />
+      <Variable x:TypeArguments="x:String" Name="UiPathEvent" />
+      <Variable x:TypeArguments="x:String" Name="UiPathEventObjectType" />
+      <Variable x:TypeArguments="x:String" Name="UiPathEventObjectId" />
+      <Variable x:TypeArguments="x:String" Name="UiPathAdditionalEventData" />
+      <Variable x:TypeArguments="sd2:DataTable2" Name="dtExtracted" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ManualTrigger Result="{x:Null}" DisplayName="The user wants to manually start this workflow." sap:VirtualizedContainerService.HintSize="620.8,78.4" sap2010:WorkflowViewState.IdRef="ManualTrigger_2" />
+    <ui:PathExists Resource="{x:Null}" DisplayName="Check if the 'data' folder exists." Exists="[folderExists]" sap:VirtualizedContainerService.HintSize="620.8,173.6" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="data" PathType="Folder" />
+    <If Condition="[Not folderExists]" DisplayName="If the 'data' folder does not exist, create it." sap:VirtualizedContainerService.HintSize="620.8,414.4" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,181.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create the 'data' folder." sap:VirtualizedContainerService.HintSize="416,117.6" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="data" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,94.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+    <Assign DisplayName="Assign the file path for the master Excel file." sap:VirtualizedContainerService.HintSize="620.8,174.4" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[masterpath]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">["data\master.xlsx"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Assign the dynamic file path for the daily Excel file." sap:VirtualizedContainerService.HintSize="620.8,174.4" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[dailypath]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[String.Format("data\{0}.xlsx", Date.Now.ToString("yyyy-MM-dd"))]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome IMS(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="620.8,404" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="6afb8c3e-1288-4d23-9d2d-85b983e5c980" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,201.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractDataGeneric x:TypeArguments="sd2:DataTable2" ContinueOnError="True" DisplayName="Extract the main data table from the web page into the dtExtracted variable." ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Reservoirs' ReferenceIdx='0' Name='Reservoirs'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Full Depth&amp;#xA;(Feet)' ReferenceIdx='1' Name='Full Depth (Feet)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Full Capacity&amp;#xA;(M.Cft.)' ReferenceIdx='2' Name='Full Capacity (M.Cft.)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Current Year Level&amp;#xA;(Feet)' ReferenceIdx='3' Name='Current Year Level (Feet)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Current Year Storage&amp;#xA;(M.Cft.)' ReferenceIdx='4' Name='Current Year Storage (M.Cft.)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Current Year Inflow&amp;#xA;(CuSecs)' ReferenceIdx='5' Name='Current Year Inflow (CuSecs)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Current Year Outflow&amp;#xA;(CuSecs)' ReferenceIdx='6' Name='Current Year Outflow (CuSecs)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Last Year Level&amp;#xA;(Feet)' ReferenceIdx='7' Name='Last Year Level (Feet)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Last Year Storage&amp;#xA;(M.Cft.)' ReferenceIdx='8' Name='Last Year Storage (M.Cft.)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Reservoirs' attr='fulltext' /&gt;&lt;column name='Full Depth&amp;#xA;(Feet)' attr='fulltext' /&gt;&lt;column name='Full Capacity&amp;#xA;(M.Cft.)' attr='fulltext' /&gt;&lt;column name='Current Year Level&amp;#xA;(Feet)' attr='fulltext' /&gt;&lt;column name='Current Year Storage&amp;#xA;(M.Cft.)' attr='fulltext' /&gt;&lt;column name='Current Year Inflow&amp;#xA;(CuSecs)' attr='fulltext' /&gt;&lt;column name='Current Year Outflow&amp;#xA;(CuSecs)' attr='fulltext' /&gt;&lt;column name='Last Year Level&amp;#xA;(Feet)' attr='fulltext' /&gt;&lt;column name='Last Year Storage&amp;#xA;(M.Cft.)' attr='fulltext' /&gt;&lt;/extract-table&gt;" ExtractedData="[dtExtracted]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,137.6" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="6afb8c3e-1288-4d23-9d2d-85b983e5c980" Version="V5">
+              <uix:NExtractDataGeneric.Target>
+                <uix:TargetAnchorable BrowserURL="https://tnagriculture.in/ARS/home/reservoir/" DesignTimeRectangle="231, 473, 1457, 947" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="0cd82a82-1f6b-4a66-9d9d-de8ec7ab757a" InformativeScreenshot="c7ea95974f0a679fd027a52f16ed1299.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='IMS' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NExtractDataGeneric.Target>
+            </uix:NExtractDataGeneric>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="fR5bdc3c5EG_laY4G48xcg" IconBase64="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" InformativeScreenshot="c6f6d4fa6863edf8f3cc94aece3abb8a.jpg" Reference="_jmcdUYqX0WbBJbry53NyQ/M4fPn7clFEipTWHFM7RTqw" Selector="&lt;html app='chrome.exe' title='IMS' /&gt;" Url="https://tnagriculture.in/ARS/home/reservoir/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <If Condition="[dtExtracted Is Nothing OrElse dtExtracted.Rows.Count = 0]" DisplayName="Check if any data was extracted from the website." sap:VirtualizedContainerService.HintSize="620.8,2352.8" sap2010:WorkflowViewState.IdRef="If_2">
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="619.2,233.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log a warning message because no data was extracted." sap:VirtualizedContainerService.HintSize="585.6,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;No data was extracted from the website.&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="619.2,1989.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Date" DataTable="[dtExtracted]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="585.6,224" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtExtracted]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="585.6,419.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow.Body>
+              <ActivityAction x:TypeArguments="sd3:DataRow">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd3:DataRow" Name="CurrentRow" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,233.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Object">[CurrentRow("Date")]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[System.DateTime.Now.ToString("yyyy-MM-dd")]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachRow.Body>
+          </ui:ForEachRow>
+          <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Use an Excel Process Scope to manage Excel operations." sap:VirtualizedContainerService.HintSize="585.6,1282.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+            <ueab:ExcelProcessScopeX.Body>
+              <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="552,1168.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Open the daily Excel file to write the extracted data." sap:VirtualizedContainerService.HintSize="518.4,1104.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_5" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="[dailypath]">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="484.8,808" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write the extracted data to the daily Excel file." sap:VirtualizedContainerService.HintSize="451.2,196" sap2010:WorkflowViewState.IdRef="WriteRangeX_3" IgnoreEmptySource="False" Source="[dtExtracted]" />
+                          <If Condition="[Not System.IO.File.Exists(masterpath)]" sap:VirtualizedContainerService.HintSize="451.2,548" sap2010:WorkflowViewState.IdRef="If_3">
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,207.2" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dtExtracted]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,143.2" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="sheet1" WorkbookPath="[masterpath]" />
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,207.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:AppendRange WorkbookPathResource="{x:Null}" DataTable="[dtExtracted]" DisplayName="Append the extracted data to the master Excel file." sap:VirtualizedContainerService.HintSize="416,143.2" sap2010:WorkflowViewState.IdRef="AppendRange_3" SheetName="Sheet1" WorkbookPath="[masterpath]" />
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelApplicationCard.Body>
+                  </ueab:ExcelApplicationCard>
+                </Sequence>
+              </ActivityAction>
+            </ueab:ExcelProcessScopeX.Body>
+          </ueab:ExcelProcessScopeX>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>

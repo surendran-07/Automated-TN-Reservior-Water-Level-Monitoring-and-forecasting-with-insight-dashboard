@@ -1,0 +1,6 @@
+{
+  "Name": "TN Reservoir",
+  "ProjectType": "Process",
+  "Description": "final project",
+  "MainFile": "Main.xaml"
+}
