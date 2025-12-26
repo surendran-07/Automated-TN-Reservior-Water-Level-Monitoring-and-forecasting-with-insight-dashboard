@@ -1,0 +1,8 @@
+reservoir_name,forecast_date,forecast_level_ft,forecast_min_level_ft,forecast_max_level_ft,forecast_trend
+AMARAVATHI*,2025-12-27,84.592,84.511,84.674,Falling
+AMARAVATHI*,2025-12-28,84.59,84.494,84.686,Falling
+AMARAVATHI*,2025-12-29,84.589,84.485,84.694,Falling
+AMARAVATHI*,2025-12-30,84.589,84.477,84.701,Falling
+AMARAVATHI*,2025-12-31,84.589,84.471,84.708,Falling
+AMARAVATHI*,2026-01-01,84.589,84.464,84.714,Falling
+AMARAVATHI*,2026-01-02,84.589,84.458,84.72,Falling

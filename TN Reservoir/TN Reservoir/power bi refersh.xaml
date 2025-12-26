@@ -1,0 +1,204 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="power_bi_refersh" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="power_bi_refersh_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="power_bi_refersh" sap:VirtualizedContainerService.HintSize="801.2,1504" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Use Application" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1480.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="dbcf7fa7-c363-4769-8d0d-790647d0f341" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1235.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT TellMe-SearchBox'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,317.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="dbcf7fa7-c363-4769-8d0d-790647d0f341" Text="TN_Reservoir_Report[k(enter)]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CVScreenId="a0753288-71cf-44e7-be8e-b09e2e4ef4f2" ContentHash="93RG2OaOL0CXsw0Px1QwOA" CvElementArea="752, 4, 495, 32" CvType="InputBox" DesignTimeRectangle="802, 8, 438, 26" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;explore-host&amp;gt;div&amp;gt;app-desktop-report-view&amp;gt;report-view-chrome&amp;gt;div&amp;gt;titlebar&amp;gt;div&amp;gt;div&amp;gt;ribbon-search&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' id='TellMe-SearchBox' tag='INPUT' /&gt;" Guid="b06ac895-97b0-41d2-b325-0d47c5ec2331" InformativeScreenshot="e1f56b8ece37b3c07b6c79edcfac1a03.png" Reference="_jmcdUYqX0WbBJbry53NyQ/eY52E-9CXkC04wViDxGh6w" ScopeSelectorArgument="&lt;html app='pbidesktop.exe' url='https://ms-pbi.pbi.microsoft.com/minerva/reportView.html' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="a0753288-71cf-44e7-be8e-b09e2e4ef4f2" CvElementArea="752, 4, 495, 32" CvType="InputBox" DesignTimeRectangle="746, 6, 500, 30" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;explore-host&amp;gt;div&amp;gt;app-desktop-report-view&amp;gt;report-view-chrome&amp;gt;div&amp;gt;titlebar&amp;gt;div&amp;gt;div&amp;gt;ribbon-search&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' id='TellMe-Wrapper' tag='DIV' /&gt;" Guid="44cf126c-308b-46b3-a715-55e968382119" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" ExpectedText="[Nothing]" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Target>
+                    <uix:TargetAnchorable CVScreenId="00df48ac-dc0f-4d63-9d6d-caae8e874816" ContentHash="9_OXWmtyGk-oWnBHXPFFfA" CvTextArea="691, 237, 198, 21" CvTextArgument="TN_Reservoir_Report.pbix" CvType="Text" DesignTimeRectangle="694, 235, 425, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='TellMe-Menu' parentname='TN_Reservoir_Report.pbix' tag='SPAN' type='' class='label-469' aaname='TN_Reservoir_Report.pbix' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='TN_Reservoir_Report.pbix' /&gt;" Guid="f71f8264-c37e-4a23-8c89-362cfbb738b6" InformativeScreenshot="86fdda54626c846c5973d0c2f19ee45c.png" Reference="_jmcdUYqX0WbBJbry53NyQ/33dFaVvW2kibibP4LCamvA" ScopeSelectorArgument="&lt;html app='pbidesktop.exe' url='https://ms-pbi.pbi.microsoft.com/minerva/reportView.html' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                          <uix:Target CVScreenId="00df48ac-dc0f-4d63-9d6d-caae8e874816" CvTextArea="691, 237, 198, 21" CvTextArgument="TN_Reservoir_Report.pbix" CvType="Text" DesignTimeRectangle="638, 221, 500, 50" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='TN_Reservoir_Report.pbix' aria-role='menuitem' tag='BUTTON' type='' class='root-467' aaname='TN_Reservoir_Report.pbix' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='TN_Reservoir_Report.pbix' /&gt;" Guid="2fb72ff4-a454-4437-95df-9192fdd88449" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:VerifyExecutionTypeIntoOptions.Target>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'TN_Reservoir_Report.pbix'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,193.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dbcf7fa7-c363-4769-8d0d-790647d0f341" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="c5ae7c89-c27e-4254-8d36-49da21e64266" ContentHash="EMKbJgpjI0qPfKOZT05E9w" CvTextArea="905, 97, 198, 21" CvTextArgument="TN_Reservoir_Report.pbix" CvType="Text" DesignTimeRectangle="906, 95, 426, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='TellMe-Menu' tag='SPAN' type='' class='label-469' aaname='TN_Reservoir_Report.pbix' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='TN_Reservoir_Report.pbix' /&gt;" Guid="6da32212-fd27-4808-878a-5345c3e18379" InformativeScreenshot="eefa322156a5af08f4a552c814216ff2.png" Reference="_jmcdUYqX0WbBJbry53NyQ/8nl8a923rkyh4Rs5iMhpCw" ScopeSelectorArgument="&lt;html app='pbidesktop.exe' url='https://ms-pbi.pbi.microsoft.com/minerva/reportView.html' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="c5ae7c89-c27e-4254-8d36-49da21e64266" CvTextArea="905, 97, 198, 21" CvTextArgument="TN_Reservoir_Report.pbix" CvType="Text" DesignTimeRectangle="850, 81, 500, 50" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='TN_Reservoir_Report.pbix' aria-role='menuitem' tag='BUTTON' type='' class='root-467' aaname='TN_Reservoir_Report.pbix' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='TN_Reservoir_Report.pbix' /&gt;" Guid="00d4fb38-11dc-45b9-b67d-ad6fc498b63b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: " HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,352.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" IsDisplayNameAuto="True" ScopeGuid="c44d1906-a7c0-4295-aaca-ba418cab829e" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,94.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                </ActivityFunc>
+              </uix:NApplicationCard.OCREngine>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 1920, 1019" FilePath="Microsoft.MicrosoftPowerBIDesktop_8wekyb3d8bbwe!Microsoft.MicrosoftPowerBIDesktop" IconBase64="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" InformativeScreenshot="34ba5754844edd7f31d342808c3ce058.png" Selector="&lt;html app='pbidesktop.exe' url='https://ms-pbi.pbi.microsoft.com/minerva/reportView.html' /&gt;" Version="V2">
+                  <uix:TargetApp.Arguments>
+                    <InArgument x:TypeArguments="x:String" />
+                  </uix:TargetApp.Arguments>
+                </uix:TargetApp>
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Refresh'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,188.8" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dbcf7fa7-c363-4769-8d0d-790647d0f341" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="c3c3b94e-a260-4a92-bbc1-159a1c4f432a" ContentHash="JPHI0BAP20ivFGHHkbvhOA" CvElementArea="748, 94, 42, 45" CvType="Icon" DesignTimeRectangle="742, 97, 49, 40" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='flexContainer-181' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;explore-host&amp;gt;div&amp;gt;app-desktop-report-view&amp;gt;report-view-chrome&amp;gt;div&amp;gt;ribbon-report-view&amp;gt;ribbon&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;span' parentid='queriesGroup-group' tag='SPAN' /&gt;" Guid="82179e85-c2c4-42b2-ae91-7928af331c65" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADUAAAAsCAYAAADFP/AjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAK2SURBVGhD7ZdbaxNBFID7d/JWBH1Qn2IFUVMqUtSCBREsWsFa2yYkac3mshfMfdP4EEUIaCwhD0nEB6UKtQqKQlojFm3Wn3JkBgfWmexmu9nsbkIePsiemTOZb2fmJDPh8Xhg1JigA6PAWGpYMCXVaDT6hh7TSkxJtVqtvmi32wMVMy3VbDaZuBFQLhIapJhjUvV6fWBijkmhz7VabSBijkipc6vVquVijkjRApVKxVIxV0ghyuWyZWKukUKUSiVLxFwlhSgWi32LOSbVi37EHJEyytBIGWUsRTGWIoylTDKSUqS003EjmJYy+4V24BqpM9NnYfHREnCvJRC/F0Dck0HYzULwOQfHT55g+uvhuJT34hQk3qchoAgQP8yDtFeAxHYK+A8ZkFoFWFeSwHUyWJbk3Fxf+O+ZxlGp0MsonrD0YxN812eYdsSFaz7gdzLwoBPD8iiGpNAz3ZfgmNTy4wCeWLiqPTk1aGuiVRP3ZXdKTc9fgo0/KbiXW2Ha9LhyZw7nBV9w7pNC50bYyTJxIyTepbCQq6S8vinwdwSYuXGZaesGKQpq1hTeXVL3N/3A/5aZuBZISvgpd4XuS7BdSviYA+FTjolbie1SdjCUUstFP95+k8cmmTaE7VL0oVdD99UisZ0G8XOeiRNsl0JvGFUu+tAfRUo4KMBKKcjECY5IoZIsfdOuXnqQfxPnZs8zbQRHpNCqoInNLc0z7b2IKBmIvUkycTWmpY4KeQlESvySh4dKGhYSd5nxtRAOZOB/9V5hU1Jogt1At2G9Z5SrPj/8bhZvRe6VpHtnCpQ38NUk1jH2+2ZKqh/oorD6NAQRJQ3xwxxEmiKsPgnBrdgiLgTxt0mQ9gtYaO1ZmBlLC9ulunHKexrCWzG8vaJKFvz/VkX8KkN4Kwqzt68yOXq4QspqRlLqL26ghri8uOiJAAAAAElFTkSuQmCC" InformativeScreenshot="0deb8a4a5925818e50bbc248aac078dc.png" Reference="_jmcdUYqX0WbBJbry53NyQ/9oiGq8JWnki6k8GsFkxkBA" ScopeSelectorArgument="&lt;html app='pbidesktop.exe' url='https://ms-pbi.pbi.microsoft.com/minerva/reportView.html' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="c3c3b94e-a260-4a92-bbc1-159a1c4f432a" CvElementArea="756, 162, 19, 18" CvTextArea="740, 142, 51, 13" CvTextArgument="Refresh" CvType="ArrowButton" DesignTimeRectangle="742, 140, 49, 42" FuzzySelectorArgument="&lt;webctrl aaname='Refresh' class='ribbon-split-container' parentid='queriesGroup-group' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:text='Refresh' /&gt;" Guid="0febc18d-9d90-4138-b29c-1371d045ec55" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 1920, 1019" ContentHash="pJtiRQJGSEGuPZrHvY0HXw" FilePath="Microsoft.MicrosoftPowerBIDesktop_8wekyb3d8bbwe!Microsoft.MicrosoftPowerBIDesktop" IconBase64="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" InformativeScreenshot="ec1055e87ac1e7ebc22f185cb00eaf88.png" Reference="_jmcdUYqX0WbBJbry53NyQ/zKU10cXk9UeYdKnnyPbPUA" Selector="&lt;html app='pbidesktop.exe' url='https://ms-pbi.pbi.microsoft.com/minerva/reportView.html' /&gt;" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
